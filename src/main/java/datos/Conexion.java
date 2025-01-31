@@ -4,10 +4,10 @@ import java.sql.*;
 
 public class Conexion {
 
-    private static final String BD = "higiene_publica";
-    private static final String URL = "jdbc:mysql://localhost:3306/" + BD;
+    private static final String BD = "srbt";
+    private static final String URL = "jdbc:mysql://viaduct.proxy.rlwy.net:55075/" + BD;
     private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "VjzJWzhoqWkVCKVwIMXnVpoZkjfodggT";
 
 
     public static Connection getConexion() {

@@ -5,15 +5,8 @@
 <web-app>
   <display-name>Rutas Barrido</display-name>
 
-  <!-- Configuración del MainServlet -->
-  <servlet>
-    <servlet-name>MainServlet</servlet-name>
-    <servlet-class>controlador.MainServlet</servlet-class>
-  </servlet>
-
-  <!-- Mapeo de URL para el MainServlet -->
-  <servlet-mapping>
-    <servlet-name>MainServlet</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
+  <!-- Redirigir la raíz a index.jsp -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

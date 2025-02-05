@@ -11,11 +11,11 @@
     Usuario usuarioSesion = (Usuario) session.getAttribute("usuario");
 
     // Obtener la información del turno matutino desde la base de datos
-    Turno turnoMatutino = null;
+    Turno turnoVespertino = null;
     try {
         java.sql.Connection conexion = Conexion.getConexion();
         TurnoDAO turnoDAO = new TurnoDAO(conexion);
-        turnoMatutino = turnoDAO.obtenerTurnoPorId(2); // Asumimos que el ID del turno matutino es 1
+        turnoVespertino = turnoDAO.obtenerTurnoPorId(2); // Asumimos que el ID del turno matutino es 1
         conexion.close();
     } catch (Exception e) {
         e.printStackTrace();
@@ -49,19 +49,19 @@
 </ul>
 <div id="map"></div>
 <div id="routes-overlay">
-    <h3>Rutas Matutinas</h3>
+    <h3>Rutas Vespertinas</h3>
     <h3 style="font-size: 15px;">Horario:
-        <% if (turnoMatutino != null) {
+        <% if (turnoVespertino != null) {
             // Convertir y formatear la hora correctamente
-            LocalTime horaInicio = LocalTime.parse(turnoMatutino.getHoraInicio());
-            LocalTime horaFin = LocalTime.parse(turnoMatutino.getHoraFin());
+            LocalTime horaInicio = LocalTime.parse(turnoVespertino.getHoraInicio());
+            LocalTime horaFin = LocalTime.parse(turnoVespertino.getHoraFin());
 
             // Formateador para mostrar la hora en HH:mm sin segundos
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         %>
         <%= horaInicio.format(formatter) %> - <%= horaFin.format(formatter) %>
         de
-        <%= turnoMatutino.getDiasOperacion() %>
+        <%= turnoVespertino.getDiasOperacion() %>
         <% } else { %>
         No disponible
         <% } %>

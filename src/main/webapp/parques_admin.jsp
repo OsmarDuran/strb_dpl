@@ -27,6 +27,7 @@
 <html>
 <head>
     <title>Administrar Parques</title>
+    <link rel="icon" href="images/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00516fee7b.js" crossorigin="anonymous"></script>

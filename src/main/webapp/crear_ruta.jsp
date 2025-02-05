@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Crear Ruta</title>
+    <link rel="icon" href="images/icons/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF-aSw2t7NUPeuijmqAVQFPYP17riMFk8&callback=initMap&v=weekly" defer></script>
     <link rel="stylesheet" href="css/styles.css">

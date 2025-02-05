@@ -32,6 +32,7 @@
 <html>
 <head>
     <title>Parques</title>
+    <link rel="icon" href="images/icons/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF-aSw2t7NUPeuijmqAVQFPYP17riMFk8&callback=initMap&v=weekly" defer></script>
     <script src="https://kit.fontawesome.com/00516fee7b.js" crossorigin="anonymous"></script>

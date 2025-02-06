@@ -144,7 +144,6 @@
                             {
                                 icon: lineSymbol,
                                 offset: "100%",
-                                repeat: '100px',
                             },
                         ] : [],
                     });
